@@ -609,20 +609,7 @@ dtb-$(CONFIG_ARCH_MSM8909) += msm8909-pm8916-mtp.dtb \
 	sdw2500-msm8909w-wtp.dtb \
 	msm8905-qrd-skub_qseev4.dtb
 
-dtb-$(CONFIG_ARCH_SDM450) += sdm450-rcm.dtb \
-	sdm450-cdp.dtb \
-	sdm450-mtp.dtb \
-	sda450-cdp.dtb \
-	sda450-mtp.dtb \
-	sdm450-qrd.dtb \
-	sdm450-pmi8940-mtp.dtb \
-	sdm450-pmi8937-mtp.dtb \
-	sdm450-iot-mtp.dtb \
-	sdm450-qrd-sku4.dtb \
-	sdm450-pmi632-cdp-s2.dtb \
-	sdm450-pmi632-mtp-s3.dtb \
-	sda450-pmi632-cdp-s2.dtb \
-	sda450-pmi632-mtp-s3.dtb
+dtb-$(CONFIG_ARCH_SDM450) += sdm450-qrd_rosy.dtb
 
 dtb-$(CONFIG_ARCH_SDM632) += sdm632-rumi.dtb \
 	sdm632-cdp-s2.dtb \

@@ -1,0 +1,15 @@
+#
+# ROSY drivers configuration
+#
+
+menu "Drivers for ROSY"
+
+config ARM64_DT_OVERLAY_ROSY
+	bool "ROSY DT overlay"
+	select CONFIG_ARCH_SDM450
+	help
+	  Say Y here to enable ROSY DT overlay.
+
+	  If unsure, say Y.
+
+endmenu
