@@ -1,3 +1,7 @@
+ifeq ($(CONFIG_ROSY),y)
+dtb-$(CONFIG_ARCH_SDM450) += sdm450-qrd_rosy.dtb
+else
+
 dtb-$(CONFIG_ARCH_QCOM)	+= apq8016-sbc.dtb msm8916-mtp.dtb
 dtb-$(CONFIG_ARCH_QCOM)	+= msm8996-mtp.dtb
 dtb-$(CONFIG_ARCH_QCOM)	+= apq8096-db820c.dtb
@@ -609,8 +613,6 @@ dtb-$(CONFIG_ARCH_MSM8909) += msm8909-pm8916-mtp.dtb \
 	sdw2500-msm8909w-wtp.dtb \
 	msm8905-qrd-skub_qseev4.dtb
 
-dtb-$(CONFIG_ARCH_SDM450) += sdm450-qrd_rosy.dtb
-
 dtb-$(CONFIG_ARCH_SDM632) += sdm632-rumi.dtb \
 	sdm632-cdp-s2.dtb \
 	sdm632-ext-codec-cdp-s3.dtb \
@@ -650,6 +652,7 @@ dtb-$(CONFIG_ARCH_SDM429) += sdm429-mtp.dtb \
 	sdm429-bg-iot-wtp.dtb
 
 endif
+endif # CONFIG_ROSY
 
 dtb-$(CONFIG_ARCH_SDM845_VM) += sdm845-vm.dtb
 
